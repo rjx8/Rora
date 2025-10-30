@@ -1,26 +1,41 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عرض الصورة</title>
     <style>
         body {
             margin: 0;
-            padding: 0;
-            background-color: #000;
+            padding: 20px;
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
         }
-        img {
+        
+        .image-container {
             max-width: 100%;
-            max-height: 100%;
-            object-fit: contain;
+            height: auto;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .responsive-image {
+            width: 100%;
+            height: auto;
+            display: block;
         }
     </style>
 </head>
 <body>
-    <img src="39e97d4e-14d8-40ec-85a7-50e44dc99cd7.jpeg" alt="">
+    <div class="image-container">
+        <img src="39e97d4e-14d8-40ec-85a7-50e44dc99cd7.jpeg" 
+             alt="الصورة" 
+             class="responsive-image">
+    </div>
 </body>
 </html>
